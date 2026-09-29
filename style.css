@@ -89,3 +89,23 @@ header h1 {
 .no-disponible {
     background-color: #ff6961; /* Rojo pastel */
 }
+
+/* Botón de WhatsApp */
+.btn-whatsapp {
+    display: inline-block;
+    background-color: #25D366; /* Color verde oficial de WhatsApp */
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: transform 0.2s, background-color 0.2s;
+    box-shadow: 0 2px 5px rgba(37, 211, 102, 0.4);
+}
+
+.btn-whatsapp:hover {
+    background-color: #1ebe57;
+    transform: scale(1.05);
+}

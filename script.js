@@ -12,30 +12,37 @@ const conejitos = [
     { nombre: "shhh vamos cerrando el ortito", raza: "Mini Lop", estado: "disponible", imagen: "imagenes/shh.jpg" }
 ];
 
-// Función para mostrar los conejitos en la página
 function cargarConejitos() {
     const contenedor = document.getElementById('tienda-contenedor');
 
     conejitos.forEach(conejito => {
-        // Determinar el texto y la clase de la etiqueta según el estado
         const textoEtiqueta = conejito.estado === "disponible" ? "Disponible" : "Adoptado";
         const claseEtiqueta = conejito.estado === "disponible" ? "disponible" : "no-disponible";
 
-        // Crear la estructura HTML de la tarjeta
+        // ¡ATENCIÓN! Cambia este número por tu número real de WhatsApp (con el 51 adelante)
+        const numeroWhatsApp = "51902243841"; 
+        
+        // Mensaje y link para WhatsApp
+        const mensaje = `Hola, estoy interesado en el conejito ${conejito.nombre} de raza ${conejito.raza}. ¿Aún está disponible?`;
+        const linkWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensaje)}`;
+
         const tarjeta = document.createElement('div');
         tarjeta.classList.add('tarjeta');
 
+        // Estructura HTML de la tarjeta (ahora incluye el botón verde)
         tarjeta.innerHTML = `
             <div class="etiqueta ${claseEtiqueta}">${textoEtiqueta}</div>
             <img src="${conejito.imagen}" alt="Conejito ${conejito.nombre}">
             <h2>${conejito.nombre}</h2>
             <p>Raza: ${conejito.raza}</p>
+            ${conejito.estado === "disponible" 
+                ? `<a href="${linkWhatsApp}" target="_blank" class="btn-whatsapp">Adoptar por WhatsApp</a>` 
+                : ''}
         `;
 
-        // Añadir la tarjeta al contenedor principal
         contenedor.appendChild(tarjeta);
     });
 }
 
-// Ejecutar la función cuando la página cargue
+// 3. ESTO EJECUTA LA FUNCIÓN
 cargarConejitos();
