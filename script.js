@@ -56,6 +56,7 @@ const conejitos = [
     },
     {
         nombre: "Conejito adulta de 2 años hembrita, de orejas levantadas, muy cariñosa y activa, se entregara con su correa, vestido y transportable.",
+        raza: "cruzada",
         estado: "disponible",
         imagenes: ["imagenes/10/10_1_portada.jpeg", "imagenes/10/10_2.jpeg", "imagenes/10/10_3.jpeg", "imagenes/10/10_4.jpeg"]
     }
