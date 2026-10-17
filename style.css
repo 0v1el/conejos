@@ -1,4 +1,4 @@
-/* Estilos generales */
+/* Reseteo general */
 * {
     margin: 0;
     padding: 0;
@@ -7,14 +7,14 @@
 }
 
 body {
-    background-color: #fdf6e3; /* Color pastel de fondo */
+    background-color: #fdf6e3;
     color: #5c4a3d;
 }
 
 header {
     text-align: center;
     padding: 2rem;
-    background-color: #ffd1dc; /* Rosa pastel */
+    background-color: #ffd1dc;
     box-shadow: 0 4px 6px rgba(0,0,0,0.05);
 }
 
@@ -24,13 +24,11 @@ header h1 {
     color: #ff6f91;
 }
 
-/* Cuadrícula adaptable para las tarjetas */
 .contenedor {
     display: grid;
-    /* Esto hace que sea responsive automáticamente */
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    padding: 2.5rem;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -38,74 +36,221 @@ header h1 {
 /* Tarjeta de cada conejito */
 .tarjeta {
     background-color: white;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
+    border-radius: 18px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
-    padding-bottom: 1rem;
+    padding-bottom: 1.2rem;
     position: relative;
 }
 
 .tarjeta:hover {
-    transform: translateY(-5px);
+    transform: translateY(-6px);
+    box-shadow: 0 10px 22px rgba(0,0,0,0.12);
 }
 
-.tarjeta img {
+/* Contenedor del manojo / pila de fotos */
+.pila-fotos {
+    position: relative;
     width: 100%;
     height: 250px;
+    cursor: pointer;
+    margin-bottom: 0.5rem;
+}
+
+/* Capas traseras inclinadas simulando fotos apiladas para que se entienda que son varias */
+.foto-capa {
+    position: absolute;
+    inset: 0;
+    background-color: #fff;
+    border-radius: 18px 18px 0 0;
+    border: 3px solid white;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.12);
+    pointer-events: none;
+    transition: transform 0.3s ease;
+}
+
+.capa-fondo-1 {
+    transform: rotate(-4deg) scale(0.96);
+    background-color: #f7e1e7;
+    z-index: 1;
+}
+
+.capa-fondo-2 {
+    transform: rotate(4deg) scale(0.97);
+    background-color: #faedf0;
+    z-index: 2;
+}
+
+/* Foto principal (portada) */
+.foto-principal {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
+    border-radius: 18px 18px 0 0;
+    border: 3px solid white;
+    transition: transform 0.3s ease;
+}
+
+/* Efecto al pasar el cursor sobre la pila */
+.pila-fotos:hover .capa-fondo-1 {
+    transform: rotate(-7deg) scale(0.95);
+}
+
+.pila-fotos:hover .capa-fondo-2 {
+    transform: rotate(7deg) scale(0.97);
+}
+
+.pila-fotos:hover .foto-principal {
+    transform: scale(1.02);
+}
+
+/* Distintivo de "Ver fotos" */
+.insignia-galeria {
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    background: rgba(0, 0, 0, 0.65);
+    color: #fff;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    z-index: 4;
+    font-weight: 600;
+    backdrop-filter: blur(2px);
+    pointer-events: none;
 }
 
 .tarjeta h2 {
-    margin: 1rem 0 0.5rem;
-    color: #ff96ad;
+    margin: 1rem 0 0.4rem;
+    color: #ff85a1;
+    font-size: 1.3rem;
 }
 
 .tarjeta p {
-    font-size: 0.9rem;
-    color: #777;
-    padding: 0 1rem;
-    margin-bottom: 1rem;
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 1.2rem;
 }
 
 /* Etiquetas de disponibilidad */
 .etiqueta {
     position: absolute;
-    top: 10px;
-    right: 10px;
-    padding: 5px 10px;
+    top: 12px;
+    right: 12px;
+    padding: 6px 12px;
     border-radius: 20px;
     font-size: 0.8rem;
     font-weight: bold;
     color: white;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    z-index: 5;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.25);
 }
 
-.disponible {
-    background-color: #77dd77; /* Verde pastel */
-}
+.disponible { background-color: #77dd77; }
+.no-disponible { background-color: #ff6961; }
 
-.no-disponible {
-    background-color: #ff6961; /* Rojo pastel */
-}
-
-/* Botón de WhatsApp */
+/* Botón WhatsApp */
 .btn-whatsapp {
     display: inline-block;
-    background-color: #25D366; /* Color verde oficial de WhatsApp */
+    background-color: #25D366;
     color: white;
     text-decoration: none;
-    padding: 8px 15px;
-    border-radius: 20px;
-    margin-bottom: 15px;
+    padding: 9px 18px;
+    border-radius: 25px;
     font-weight: bold;
     font-size: 0.9rem;
     transition: transform 0.2s, background-color 0.2s;
-    box-shadow: 0 2px 5px rgba(37, 211, 102, 0.4);
+    box-shadow: 0 3px 6px rgba(37, 211, 102, 0.35);
 }
 
 .btn-whatsapp:hover {
     background-color: #1ebe57;
-    transform: scale(1.05);
+    transform: scale(1.04);
+}
+
+/* ==================== ESTILOS DEL MODAL / LIGHTBOX ==================== */
+.modal-galeria {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.88);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-galeria.activo {
+    display: flex;
+}
+
+.modal-contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 90vw;
+    max-height: 85vh;
+}
+
+#img-modal {
+    max-width: 80vw;
+    max-height: 75vh;
+    border-radius: 12px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.5);
+    object-fit: contain;
+    user-select: none;
+}
+
+.modal-contador {
+    color: #fff;
+    margin-top: 10px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+.btn-cerrar {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    color: #fff;
+    font-size: 2.5rem;
+    cursor: pointer;
+    line-height: 1;
+    transition: transform 0.2s;
+}
+
+.btn-cerrar:hover {
+    transform: scale(1.2);
+    color: #ff96ad;
+}
+
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    padding: 12px 18px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background 0.3s, transform 0.2s;
+    user-select: none;
+}
+
+.nav-btn:hover {
+    background: rgba(255, 255, 255, 0.5);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.btn-prev { left: 25px; }
+.btn-next { right: 25px; }
+
+@media (max-width: 600px) {
+    .btn-prev { left: 10px; }
+    .btn-next { right: 10px; }
+    #img-modal { max-width: 95vw; }
 }

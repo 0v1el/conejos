@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adopción de Conejitos</title>
-    <!-- Vinculamos el archivo CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,10 +13,22 @@
         <p>Conoce a nuestros hermosos conejitos esperando un hogar.</p>
     </header>
 
-    <!-- Aquí se insertarán los conejitos mediante JavaScript -->
+    <!-- Contenedor donde se insertarán las tarjetas -->
     <main id="tienda-contenedor" class="contenedor"></main>
 
-    <!-- Vinculamos el archivo JavaScript -->
+    <!-- ver la galería de fotos -->
+    <div id="modal-galeria" class="modal-galeria">
+        <span class="btn-cerrar" id="btn-cerrar">&times;</span>
+        <button class="nav-btn btn-prev" id="btn-prev">&#10094;</button>
+        
+        <div class="modal-contenido">
+            <img id="img-modal" src="" alt="Foto conejito">
+            <div id="modal-contador" class="modal-contador">1 / 4</div>
+        </div>
+
+        <button class="nav-btn btn-next" id="btn-next">&#10095;</button>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
