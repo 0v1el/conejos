@@ -1,59 +1,64 @@
 // Cada conejito contiene 4 fotos en un arreglo
 const conejitos = [
     { 
-        nombre: "1", 
+        nombre: "Hembrita🎀Conejita hembra color semi negro de orejas caídas y peluda", 
         raza: "Mini Lop", 
         estado: "disponible", 
         imagenes: ["imagenes/1/1_1_portada.jpeg", "imagenes/1/1_2.jpeg", "imagenes/1/1_3.jpeg", "imagenes/1/1_4.jpeg"] 
     },
     { 
-        nombre: "2", 
+        nombre: "Macho🚹Conejito negrito orejas caídas de regular tamaño y semi peludo", 
         raza: "Mini Lop", 
         estado: "disponible", 
         imagenes: ["imagenes/2/2_1_portada.jpeg", "imagenes/2/2_2.jpeg", "imagenes/2/2_3.jpeg", "imagenes/2/2_4.jpeg"] 
     },
     { 
-        nombre: "3", 
+        nombre: "Género (?) Conejito semi negrito orejas caídas y de poco pelo", 
         raza: "Mini Lop", 
         estado: "disponible", 
         imagenes: ["imagenes/3/3_1_portada.jpeg", "imagenes/3/3_2.jpeg", "imagenes/3/3_3.jpeg", "imagenes/3/3_5.jpeg"] 
     },
     { 
-        nombre: "4", 
+        nombre: "Conejito Macho🚹 Conejito blanco con negro orejas caídas y de poco pelo pero con un encantador bigote de Hitler", 
         raza: "Mini Lop", 
         estado: "disponible", 
         imagenes: ["imagenes/4/4_1_portada.jpeg", "imagenes/4/4_2.jpeg", "imagenes/4/4_3.jpeg", "imagenes/4/4_4.jpeg"] 
     },
     { 
-        nombre: "5", 
+        nombre: "Genero(?) Conejito de orejas caídas pequeñas, plomita con blanco y de bastante pelo", 
         raza: "Mini Lop", 
         estado: "disponible", 
         imagenes: ["imagenes/5/5_1_portada.jpeg", "imagenes/5/5_2.jpeg", "imagenes/5/5_3.jpeg", "imagenes/5/5_2.jpeg"] 
     },
     { 
-        nombre: "6", 
+        nombre: "Genero(?) Conejito de orejas caídas color gris con blanco y de regular pelo", 
         raza: "Mini Lop", 
         estado: "disponible", 
         imagenes: ["imagenes/6/6_1_portada.jpeg", "imagenes/6/6_2.jpeg", "imagenes/6/6_3.jpeg", "imagenes/6/6_2.jpeg"] 
     },
     { 
-        nombre: "7", 
+        nombre: "Hembrita🎀 Conejita de orejas caídas, color negrito con una sola mancha blanca y de regular pelo y el más pequeño de todas las camadas", 
         raza: "Mini Lop", 
         estado: "disponible", 
         imagenes: ["imagenes/7/7_1_portada.jpeg", "imagenes/7/7_2.jpeg", "imagenes/7/7_3.jpeg", "imagenes/7/7_4.jpeg"] 
     },
     { 
-        nombre: "8", 
+        nombre: "Genero (?) Conejito de orejas caídas color negro y de regular pelo tamaño grande por ahora", 
         raza: "Mini Lop", 
         estado: "disponible", 
         imagenes: ["imagenes/8/8_1_portada.jpeg", "imagenes/8/8_2.jpeg", "imagenes/8/8_3.jpeg", "imagenes/8/8_4.jpeg"] 
     },
     { 
-        nombre: "9", 
+        nombre: "Genero (?) Conejito de orejas caídas pelaje gris,  plomo y blanco de bastante pelaje", 
         raza: "Mini Lop", 
         estado: "disponible", 
         imagenes: ["imagenes/9/9_1_portada.jpeg", "imagenes/9/9_2.jpeg", "imagenes/9/9_3.jpeg", "imagenes/9/9_4.jpeg"] 
     },
+    {
+        nombre: "Conejito adulta de 2 años hembrita, de orejas levantadas, muy cariñosa y activa, se entregara con su correa, vestido y transportable.",
+        estado: "disponible",
+        imagenes: ["imagenes/10/10_1_portada.jpeg", "imagenes/10/10_2.jpeg", "imagenes/10/10_3.jpeg", "imagenes/10/10_4.jpeg"]
+    }
 ];
 
 // Variables para controlar el visor emergente
