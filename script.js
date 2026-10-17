@@ -10,56 +10,50 @@ const conejitos = [
         nombre: "2", 
         raza: "Mini Lop", 
         estado: "disponible", 
-        imagenes: ["imagenes/2/2_1_portada.jpg", "imagenes/2/2_2.jpg", "imagenes/2/2_3.jpg", "imagenes/2/2_4.jpg"] 
+        imagenes: ["imagenes/2/2_1_portada.jpeg", "imagenes/2/2_2.jpeg", "imagenes/2/2_3.jpeg", "imagenes/2/2_4.jpeg"] 
     },
     { 
         nombre: "3", 
         raza: "Mini Lop", 
         estado: "disponible", 
-        imagenes: ["imagenes/facha1.jpg", "imagenes/facha1_2.jpg", "imagenes/facha1_3.jpg", "imagenes/facha1_4.jpg"] 
+        imagenes: ["imagenes/3/3_1_portada.jpeg", "imagenes/3/3_2.jpeg", "imagenes/3/3_3.jpeg", "imagenes/3/3_4.jpeg"] 
     },
     { 
         nombre: "4", 
         raza: "Mini Lop", 
         estado: "disponible", 
-        imagenes: ["imagenes/facha2.jpg", "imagenes/facha2_2.jpg", "imagenes/facha2_3.jpg", "imagenes/facha2_4.jpg"] 
+        imagenes: ["imagenes/4/4_1_portada.jpeg", "imagenes/4/4_2.jpeg", "imagenes/4/4_3.jpeg", "imagenes/4/4_4.jpeg"] 
     },
     { 
         nombre: "5", 
         raza: "Mini Lop", 
         estado: "disponible", 
-        imagenes: ["imagenes/feli.jpg", "imagenes/feli_2.jpg", "imagenes/feli_3.jpg", "imagenes/feli_4.jpg"] 
+        imagenes: ["imagenes/5/5_1_portada.jpeg", "imagenes/5/5_2.jpeg", "imagenes/5/5_3.jpeg", "imagenes/5/5_4.jpeg"] 
     },
     { 
         nombre: "6", 
         raza: "Mini Lop", 
         estado: "disponible", 
-        imagenes: ["imagenes/lenguita.jpg", "imagenes/lenguita_2.jpg", "imagenes/lenguita_3.jpg", "imagenes/lenguita_4.jpg"] 
+        imagenes: ["imagenes/6/6_1_portada.jpeg", "imagenes/6/6_2.jpeg", "imagenes/6/6_3.jpeg", "imagenes/6/6_4.jpeg"] 
     },
     { 
         nombre: "7", 
         raza: "Mini Lop", 
         estado: "disponible", 
-        imagenes: ["imagenes/narco.jpg", "imagenes/narco_2.jpg", "imagenes/narco_3.jpg", "imagenes/narco_4.jpg"] 
+        imagenes: ["imagenes/7/7_1_portada.jpeg", "imagenes/7/7_2.jpeg", "imagenes/7/7_3.jpeg", "imagenes/7/7_4.jpeg"] 
     },
     { 
         nombre: "8", 
         raza: "Mini Lop", 
         estado: "disponible", 
-        imagenes: ["imagenes/nerd.jpg", "imagenes/nerd_2.jpg", "imagenes/nerd_3.jpg", "imagenes/nerd_4.jpg"] 
+        imagenes: ["imagenes/8/8_1_portada.jpeg", "imagenes/8/8_2.jpeg", "imagenes/8/8_3.jpeg", "imagenes/8/8_4.jpeg"] 
     },
     { 
         nombre: "9", 
         raza: "Mini Lop", 
         estado: "disponible", 
-        imagenes: ["imagenes/pregunta.jpg", "imagenes/pregunta_2.jpg", "imagenes/pregunta_3.jpg", "imagenes/pregunta_4.jpg"] 
+        imagenes: ["imagenes/9/9_1_portada.jpeg", "imagenes/9/9_2.jpeg", "imagenes/9/9_3.jpeg", "imagenes/9/9 _4.jpeg"] 
     },
-    { 
-        nombre: "10", 
-        raza: "Mini Lop", 
-        estado: "disponible", 
-        imagenes: ["imagenes/shh.jpg", "imagenes/shh_2.jpg", "imagenes/shh_3.jpg", "imagenes/shh_4.jpg"] 
-    }
 ];
 
 // Variables para controlar el visor emergente
