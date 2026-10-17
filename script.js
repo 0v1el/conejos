@@ -4,7 +4,7 @@ const conejitos = [
         nombre: "1", 
         raza: "Mini Lop", 
         estado: "disponible", 
-        imagenes: ["imagenes/1/1_1_portada.jpg", "imagenes/1/1_2.jpg", "imagenes/1/1_3.jpg", "imagenes/1/1_4.jpg"] 
+        imagenes: ["imagenes/1/1_1_portada.jpeg", "imagenes/1/1_2.jpeg", "imagenes/1/1_3.jpeg", "imagenes/1/1_4.jpeg"] 
     },
     { 
         nombre: "2", 
@@ -13,49 +13,49 @@ const conejitos = [
         imagenes: ["imagenes/2/2_1_portada.jpg", "imagenes/2/2_2.jpg", "imagenes/2/2_3.jpg", "imagenes/2/2_4.jpg"] 
     },
     { 
-        nombre: "posesita", 
+        nombre: "3", 
         raza: "Mini Lop", 
         estado: "disponible", 
         imagenes: ["imagenes/facha1.jpg", "imagenes/facha1_2.jpg", "imagenes/facha1_3.jpg", "imagenes/facha1_4.jpg"] 
     },
     { 
-        nombre: "posesita 2", 
+        nombre: "4", 
         raza: "Mini Lop", 
         estado: "disponible", 
         imagenes: ["imagenes/facha2.jpg", "imagenes/facha2_2.jpg", "imagenes/facha2_3.jpg", "imagenes/facha2_4.jpg"] 
     },
     { 
-        nombre: "yo cuando molesto a mi novia y ella se molesta pero yo queria eso y estoy feliz de hacerlo xdxd, no mentira amorcito, te amo", 
+        nombre: "5", 
         raza: "Mini Lop", 
         estado: "disponible", 
         imagenes: ["imagenes/feli.jpg", "imagenes/feli_2.jpg", "imagenes/feli_3.jpg", "imagenes/feli_4.jpg"] 
     },
     { 
-        nombre: "pose metalera", 
+        nombre: "6", 
         raza: "Mini Lop", 
         estado: "disponible", 
         imagenes: ["imagenes/lenguita.jpg", "imagenes/lenguita_2.jpg", "imagenes/lenguita_3.jpg", "imagenes/lenguita_4.jpg"] 
     },
     { 
-        nombre: "oviel modo san marquino terruco", 
+        nombre: "7", 
         raza: "Mini Lop", 
         estado: "disponible", 
         imagenes: ["imagenes/narco.jpg", "imagenes/narco_2.jpg", "imagenes/narco_3.jpg", "imagenes/narco_4.jpg"] 
     },
     { 
-        nombre: "oviel nerd", 
+        nombre: "8", 
         raza: "Mini Lop", 
         estado: "disponible", 
         imagenes: ["imagenes/nerd.jpg", "imagenes/nerd_2.jpg", "imagenes/nerd_3.jpg", "imagenes/nerd_4.jpg"] 
     },
     { 
-        nombre: "esto le gustará a waby?", 
+        nombre: "9", 
         raza: "Mini Lop", 
         estado: "disponible", 
         imagenes: ["imagenes/pregunta.jpg", "imagenes/pregunta_2.jpg", "imagenes/pregunta_3.jpg", "imagenes/pregunta_4.jpg"] 
     },
     { 
-        nombre: "shhh vamos cerrando el ortito", 
+        nombre: "10", 
         raza: "Mini Lop", 
         estado: "disponible", 
         imagenes: ["imagenes/shh.jpg", "imagenes/shh_2.jpg", "imagenes/shh_3.jpg", "imagenes/shh_4.jpg"] 
