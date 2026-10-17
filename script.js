@@ -16,7 +16,7 @@ const conejitos = [
         nombre: "3", 
         raza: "Mini Lop", 
         estado: "disponible", 
-        imagenes: ["imagenes/3/3_1_portada.jpeg", "imagenes/3/3_2.jpeg", "imagenes/3/3_3.jpeg", "imagenes/3/3_4.jpeg"] 
+        imagenes: ["imagenes/3/3_1_portada.jpeg", "imagenes/3/3_2.jpeg", "imagenes/3/3_3.jpeg", "imagenes/3/3_5.jpeg"] 
     },
     { 
         nombre: "4", 
@@ -28,13 +28,13 @@ const conejitos = [
         nombre: "5", 
         raza: "Mini Lop", 
         estado: "disponible", 
-        imagenes: ["imagenes/5/5_1_portada.jpeg", "imagenes/5/5_2.jpeg", "imagenes/5/5_3.jpeg", "imagenes/5/5_4.jpeg"] 
+        imagenes: ["imagenes/5/5_1_portada.jpeg", "imagenes/5/5_2.jpeg", "imagenes/5/5_3.jpeg", "imagenes/5/5_2.jpeg"] 
     },
     { 
         nombre: "6", 
         raza: "Mini Lop", 
         estado: "disponible", 
-        imagenes: ["imagenes/6/6_1_portada.jpeg", "imagenes/6/6_2.jpeg", "imagenes/6/6_3.jpeg", "imagenes/6/6_4.jpeg"] 
+        imagenes: ["imagenes/6/6_1_portada.jpeg", "imagenes/6/6_2.jpeg", "imagenes/6/6_3.jpeg", "imagenes/6/6_2.jpeg"] 
     },
     { 
         nombre: "7", 
@@ -52,7 +52,7 @@ const conejitos = [
         nombre: "9", 
         raza: "Mini Lop", 
         estado: "disponible", 
-        imagenes: ["imagenes/9/9_1_portada.jpeg", "imagenes/9/9_2.jpeg", "imagenes/9/9_3.jpeg", "imagenes/9/9 _4.jpeg"] 
+        imagenes: ["imagenes/9/9_1_portada.jpeg", "imagenes/9/9_2.jpeg", "imagenes/9/9_3.jpeg", "imagenes/9/9_4.jpeg"] 
     },
 ];
 
