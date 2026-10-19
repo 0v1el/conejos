@@ -79,7 +79,7 @@ function cargarConejitos() {
     conejitos.forEach((conejito, indiceConejo) => {
         const textoEtiqueta = conejito.estado === "disponible" ? "Disponible" : "Adoptado";
         const claseEtiqueta = conejito.estado === "disponible" ? "disponible" : "no-disponible";
-        const numeroWhatsApp = "51902243841"; 
+        const numeroWhatsApp = "51974229983"; 
         
         const mensaje = `Hola, estoy interesado en el conejito ${conejito.nombre} de raza ${conejito.raza}. ¿Aún está disponible?`;
         const linkWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensaje)}`;
