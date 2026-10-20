@@ -62,6 +62,9 @@ const conejitos = [
     }
 ];
 
+// URL pública de GitHub Pages para generar la vista previa de la foto en WhatsApp
+const urlBaseWeb = "https://0v1el.github.io/conejos/";
+
 // Variables para controlar el visor emergente
 let listaFotosActual = [];
 let indiceFotoActual = 0;
@@ -81,7 +84,15 @@ function cargarConejitos() {
         const claseEtiqueta = conejito.estado === "disponible" ? "disponible" : "no-disponible";
         const numeroWhatsApp = "51974229983"; 
         
-        const mensaje = `Hola, estoy interesado en el conejito ${conejito.nombre} de raza ${conejito.raza}. ¿Aún está disponible?`;
+        // Obtenemos el link web completo de la primera foto para que WhatsApp genere la miniatura
+        const urlFotoReferencia = `${urlBaseWeb}${conejito.imagenes[0]}`;
+        
+        // Mensaje formateado con salto de línea y la foto para la previsualización
+        const mensaje = 
+            `¡Hola! 🐰 Estoy interesado en adoptar a: ${conejito.nombre} (Raza: ${conejito.raza}).\n\n` +
+            `Foto de referencia:\n${urlFotoReferencia}\n\n` +
+            `¿Aún está disponible y aplica la promoción?`;
+            
         const linkWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensaje)}`;
 
         const tarjeta = document.createElement('div');

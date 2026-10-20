@@ -8,14 +8,20 @@
 </head>
 <body>
 
-    <header class="banner-movil-container">
-    <img src="imagenes/banner-celular.png" alt="Oferta conejitos" class="banner-movil-img">
+    <header class="banner-contenedor">
+    <picture>
+        <!-- Para celulares o de pantallas mass pequeñas (hasta 768px) -->
+        <source media="(max-width: 768px)" srcset="imagenes/banner_nuevo_cel_100porcent_recortado.png">
+        
+        <!-- imagen que deberia salir en dispositios mas grandes (pc/laptop) -->
+        <img src="imagenes/banner_nuevo_pc_recortadoypequeño.png" alt="Promoción especial adopción de conejitos" class="banner-img">
+    </picture>
     </header>
 
     <!-- Contenedor donde se insertarán las tarjetas -->
     <main id="tienda-contenedor" class="contenedor"></main>
 
-    <!-- ver la galería de fotos -->
+    <!-- galería de fotos -->
     <div id="modal-galeria" class="modal-galeria">
         <span class="btn-cerrar" id="btn-cerrar">&times;</span>
         <button class="nav-btn btn-prev" id="btn-prev">&#10094;</button>

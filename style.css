@@ -171,7 +171,7 @@ header h1 {
     transform: scale(1.04);
 }
 
-/* ==================== ESTILOS DEL MODAL / LIGHTBOX ==================== */
+/* ==================== ESTILOS DEL MODAL / LIGHTBOX :V ==================== */
 .modal-galeria {
     display: none;
     position: fixed;
@@ -254,7 +254,7 @@ header h1 {
     .btn-next { right: 10px; }
     #img-modal { max-width: 95vw; }
 }
-/* Cabecera optimizada para celular */
+/* banner de celular (parte de arriba) */
 header.banner-movil-container {
     width: 100%;
     margin: 0;
@@ -272,10 +272,44 @@ header.banner-movil-container {
     object-fit: contain;
 }
 
-/* Ajustes de espacio para vista en móvil */
+/* Ajustes de espacio para vista en cel 
 @media (max-width: 600px) {
     .contenedor {
         padding: 1rem 12px;
         gap: 20px;
+    }
+}*/
+
+/* ==================== BANNER RESPONSIVO ADAPTABLE ==================== */
+header.banner-contenedor {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #ffd1dc; /* Color base rosa suave */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+header.banner-contenedor picture {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.banner-img {
+    width: 100%;
+    height: auto; /* Mantiene la proporción perfecta sin deformar */
+    display: block;
+    object-fit: cover;
+    max-width: 100%; /* Ocupa el ancho completo disponible */
+}
+
+/* Ajuste fino para celular */
+@media (max-width: 768px) {
+    header.banner-contenedor {
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
     }
 }
