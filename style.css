@@ -254,3 +254,28 @@ header h1 {
     .btn-next { right: 10px; }
     #img-modal { max-width: 95vw; }
 }
+/* Cabecera optimizada para celular */
+header.banner-movil-container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #ffd1dc;
+    display: block;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.banner-movil-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+/* Ajustes de espacio para vista en móvil */
+@media (max-width: 600px) {
+    .contenedor {
+        padding: 1rem 12px;
+        gap: 20px;
+    }
+}
