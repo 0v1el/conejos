@@ -1,4 +1,4 @@
-/* Reseteo general */
+/* Reseteo general (puto edge me estaba troleando)*/
 * {
     margin: 0;
     padding: 0;
@@ -152,7 +152,7 @@ header h1 {
 .disponible { background-color: #77dd77; }
 .no-disponible { background-color: #ff6961; }
 
-/* Botón WhatsApp */
+/* Botón del WhatsApp */
 .btn-whatsapp {
     display: inline-block;
     background-color: #25D366;
@@ -255,6 +255,7 @@ header h1 {
     #img-modal { max-width: 95vw; }
 }
 /* banner de celular (parte de arriba) */
+/* en realidad esto ya quedo masomenos en desuso, pero lo dejo por si acaso */
 header.banner-movil-container {
     width: 100%;
     margin: 0;
@@ -280,12 +281,12 @@ header.banner-movil-container {
     }
 }*/
 
-/* ==================== BANNER RESPONSIVO ADAPTABLE ==================== */
+/* ==================== BANNER RESPONSIVO ADAPTABLE Bv ==================== */
 header.banner-contenedor {
     width: 100%;
     margin: 0;
     padding: 0;
-    background-color: #ffd1dc; /* Color base rosa suave */
+    background-color: #ffd1dc; 
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
     display: flex;
     justify-content: center;
@@ -301,13 +302,12 @@ header.banner-contenedor picture {
 
 .banner-img {
     width: 100%;
-    height: auto; /* Mantiene la proporción perfecta sin deformar */
+    height: auto; /* para mantener la proporción */
     display: block;
     object-fit: cover;
-    max-width: 100%; /* Ocupa el ancho completo disponible */
+    max-width: 100%; 
 }
 
-/* Ajuste fino para celular */
 @media (max-width: 768px) {
     header.banner-contenedor {
         box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);

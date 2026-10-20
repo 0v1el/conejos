@@ -1,4 +1,4 @@
-// Cada conejito contiene 4 fotos en un arreglo
+// Cada conejito contiene 4 fotos en un arreglo, la primera foto es la portada y las otras 3 son para la galería.
 const conejitos = [
     { 
         nombre: "Hembrita🎀Conejita hembra color semi negro de orejas caídas y peluda", 
@@ -84,7 +84,7 @@ function cargarConejitos() {
         const claseEtiqueta = conejito.estado === "disponible" ? "disponible" : "no-disponible";
         const numeroWhatsApp = "51974229983"; 
         
-        // Obtenemos el link web completo de la primera foto para que WhatsApp genere la miniatura
+        // imagen de previzualización para WhatsApp (la primera foto del conejito)
         const urlFotoReferencia = `${urlBaseWeb}${conejito.imagenes[0]}`;
         
         // Mensaje formateado con salto de línea y la foto para la previsualización
@@ -167,5 +167,5 @@ document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') cerrarModal();
 });
 
-// Iniciar
+
 cargarConejitos();
