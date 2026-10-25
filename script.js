@@ -1,60 +1,60 @@
 // Cada conejito contiene 4 fotos en un arreglo, la primera foto es la portada y las otras 3 son para la galería.
 const conejitos = [
-    { 
-        nombre: "Hembrita🎀Conejita hembra color semi negro de orejas caídas y peluda", 
+    {   //1
+        nombre: "Hembrita🎀Conejita color semi negro de orejas caídas y peluda", 
         raza: "Mini Lop", 
         estado: "disponible", 
         imagenes: ["imagenes/1/1_1_portada.jpeg", "imagenes/1/1_2.jpeg", "imagenes/1/1_3.jpeg", "imagenes/1/1_4.jpeg"] 
     },
-    { 
-        nombre: "Macho🚹Conejito negrito orejas caídas de regular tamaño y semi peludo", 
+    {   //2
+        nombre: "Hembrita🎀Conejita negrita orejas caídas de regular tamaño y semi peluda", 
         raza: "Mini Lop", 
         estado: "disponible", 
         imagenes: ["imagenes/2/2_1_portada.jpeg", "imagenes/2/2_2.jpeg", "imagenes/2/2_3.jpeg", "imagenes/2/2_4.jpeg"] 
     },
-    { 
-        nombre: "Género (?) Conejito semi negrito orejas caídas y de poco pelo", 
+    {   //3 
+        nombre: "Hembrita🎀 Conejita semi negrita orejas caídas y de poco pelo", 
         raza: "Mini Lop", 
         estado: "disponible", 
         imagenes: ["imagenes/3/3_1_portada.jpeg", "imagenes/3/3_2.jpeg", "imagenes/3/3_3.jpeg", "imagenes/3/3_5.jpeg"] 
     },
-    { 
+    {   //4
         nombre: "Conejito Macho🚹 Conejito blanco con negro orejas caídas y de poco pelo pero con un encantador bigote de Hitler", 
         raza: "Mini Lop", 
         estado: "disponible", 
         imagenes: ["imagenes/4/4_1_portada.jpeg", "imagenes/4/4_2.jpeg", "imagenes/4/4_3.jpeg", "imagenes/4/4_4.jpeg"] 
     },
-    { 
-        nombre: "Genero(?) Conejito de orejas caídas pequeñas, plomita con blanco y de bastante pelo", 
+    {   //5
+        nombre: "Conejito Macho de orejas caídas pequeñas, plomita con blanco y de bastante pelo", 
         raza: "Mini Lop", 
         estado: "disponible", 
         imagenes: ["imagenes/5/5_1_portada.jpeg", "imagenes/5/5_2.jpeg", "imagenes/5/5_3.jpeg", "imagenes/5/5_2.jpeg"] 
     },
-    { 
-        nombre: "Genero(?) Conejito de orejas caídas color gris con blanco y de regular pelo", 
+    {   //6
+        nombre: "Hembrita🎀 Conejita de orejas caídas color gris con blanco y de regular pelo", 
         raza: "Mini Lop", 
         estado: "disponible", 
         imagenes: ["imagenes/6/6_1_portada.jpeg", "imagenes/6/6_2.jpeg", "imagenes/6/6_3.jpeg", "imagenes/6/6_2.jpeg"] 
     },
-    { 
+    {   //7
         nombre: "Hembrita🎀 Conejita de orejas caídas, color negrito con una sola mancha blanca y de regular pelo y el más pequeño de todas las camadas", 
         raza: "Mini Lop", 
         estado: "disponible", 
         imagenes: ["imagenes/7/7_1_portada.jpeg", "imagenes/7/7_2.jpeg", "imagenes/7/7_3.jpeg", "imagenes/7/7_4.jpeg"] 
     },
-    { 
-        nombre: "Genero (?) Conejito de orejas caídas color negro y de regular pelo tamaño grande por ahora", 
+    {   //8
+        nombre: "Conejito Macho de orejas caídas color negro y de regular pelo tamaño grande por ahora", 
         raza: "Mini Lop", 
         estado: "disponible", 
         imagenes: ["imagenes/8/8_1_portada.jpeg", "imagenes/8/8_2.jpeg", "imagenes/8/8_3.jpeg", "imagenes/8/8_4.jpeg"] 
     },
-    { 
-        nombre: "Genero (?) Conejito de orejas caídas pelaje gris,  plomo y blanco de bastante pelaje", 
+    {   //9
+        nombre: "Hembrita🎀 Conejita de orejas caídas pelaje gris,  plomo y blanco de bastante pelaje", 
         raza: "Mini Lop", 
         estado: "disponible", 
         imagenes: ["imagenes/9/9_1_portada.jpeg", "imagenes/9/9_2.jpeg", "imagenes/9/9_3.jpeg", "imagenes/9/9_4.jpeg"] 
     },
-    {
+    {   //10    
         nombre: "Conejito adulta de 2 años hembrita, de orejas levantadas, muy cariñosa y activa, se entregara con su correa, vestido y transportable.",
         raza: "cruzada",
         estado: "disponible",
@@ -89,7 +89,7 @@ function cargarConejitos() {
         
         // Mensaje formateado con salto de línea y la foto para la previsualización
         const mensaje = 
-            `¡Hola! 🐰 Estoy interesado en adoptar a: ${conejito.nombre} (Raza: ${conejito.raza}).\n\n` +
+            `¡Hola! 🐰 Estoy interesado en comprar a: ${conejito.nombre} (Raza: ${conejito.raza}).\n\n` +
             `Foto de referencia:\n${urlFotoReferencia}\n\n` +
             `¿Aún está disponible y aplica la promoción?`;
             
@@ -112,7 +112,7 @@ function cargarConejitos() {
             <h2>${conejito.nombre}</h2>
             <p>Raza: ${conejito.raza}</p>
             ${conejito.estado === "disponible" 
-                ? `<a href="${linkWhatsApp}" target="_blank" class="btn-whatsapp">Adoptar por WhatsApp</a>` 
+                ? `<a href="${linkWhatsApp}" target="_blank" class="btn-whatsapp">Contactar por WhatsApp</a>` 
                 : ''}
         `;
 
