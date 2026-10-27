@@ -21,7 +21,7 @@ const conejitos = [
     {   //4
         nombre: "Conejito Macho🚹 Conejito blanco con negro orejas caídas y de poco pelo pero con un encantador bigote de Hitler", 
         raza: "Mini Lop", 
-        estado: "disponible", 
+        estado: "no disponible", 
         imagenes: ["imagenes/4/4_1_portada.jpeg", "imagenes/4/4_2.jpeg", "imagenes/4/4_3.jpeg", "imagenes/4/4_4.jpeg"] 
     },
     {   //5
